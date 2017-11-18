@@ -1,0 +1,21 @@
+# reverse the list by recursion method ;
+
+def reverse(str):
+    if len(str) == 0:
+        return str
+    else:
+        return reverse(str[1:])+str[0]
+a=input("please enter the string:  ")
+print(reverse(a))
+
+
+
+
+# reverse the list by using slice method;
+
+def reverse(string):
+    print("Your Original String :   ",string)
+    string = string[ :: -1]
+    return string
+string=input("Please enter the string: ")
+print(reverse(string))
